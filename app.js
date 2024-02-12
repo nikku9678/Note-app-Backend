@@ -28,11 +28,12 @@ app.use(
         credentials: true,
       })
     );
+
+
     // router
     app.use("/api/v1/users",userRouter)
     app.use("/api/v1/task",taskRoute)
     app.use(errorMiddleware);
-    // app.use(cors());
 
 
 app.get("/", (req, res) => {
